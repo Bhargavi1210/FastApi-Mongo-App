@@ -2,7 +2,7 @@ from fastapi import APIRouter
 from models.posts import Post
 from models.posts import Comment
 from config.database import collection_name
-from schema.schemas import list_serial
+from schema.schemas import list_serial,individual_serial
 from bson import ObjectId
 
 router=APIRouter()
@@ -18,8 +18,12 @@ async def get_posts():
 @router.get("/{id}")
 async def get_one_post(id:str):
     try:
-        post=list_serial(collection_name.find(id))
-        return post
+        post=collection_name.find_one({"_id":ObjectId(id)})
+        if post is not None:
+            return dict(individual_serial(post))
+        else:
+            return {"message": "No post found with the given ID"}
+    
     except Exception as e:
         return{"message":f"Error retreving post:{str(e)}"}
 
