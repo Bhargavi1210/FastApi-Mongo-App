@@ -2,7 +2,7 @@
 ## Clone the repository:</br>
  ``git clone https://github.com/Bhargavi1210/API-task.git`` 
  </br>
-## Make sure you are using python version=<3.10
+## Make sure you are using python version=>3.10
 ### To check:
 ``python --version``
 </br>
