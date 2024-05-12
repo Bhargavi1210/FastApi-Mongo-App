@@ -1,0 +1,4 @@
+fastapi
+uvicorn
+pymongo==3.10
+pymongo[srv]
