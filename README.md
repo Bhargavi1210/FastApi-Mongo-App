@@ -2,7 +2,7 @@
 ## Clone the repository:</br>
  ``git clone https://github.com/Bhargavi1210/FastApi-Mongo-App.git`` 
  </br>
-## Make sure you are using python version=>3.10
+## Make sure you are using python version>=3.10
 ### To check:
 ``python --version``
 </br>
