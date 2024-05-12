@@ -16,3 +16,8 @@ to start the FastAPI development server</br>
   After running the above command the API server will run on localhost.You have to got to the /docs page to access the the API services such as 
   creating,updating deleting posts,commnets and also like/dislike them.
 </p>
+</br>
+
+![[UI]](assets/UI.png)
+
+
